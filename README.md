@@ -17,7 +17,7 @@ The goal of this assignment is to implement shape from shading by assuming objec
   <img width="250" height="250" src="utils/3dFace.gif">
 </p>
 
-### [Blob Detector](3\MachineProblems/3%20Scale_Space_blob_detection)
+### [Blob Detector](MachineProblems/3%20Scale_Space_blob_detection)
 
 The goal of the assignment is to implement a Laplacian blob detector.This machine problem is based on application of the scale and rotation invariance in finding the features (corners) through laplacian of gaussian filter. The blob detectors 
 detect the image corners and represent as blobs which plays an important role in tracking and object detection. 
