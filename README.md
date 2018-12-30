@@ -1,4 +1,4 @@
-# ComputerVision
+# Computer Vision @ UIUC
 
 This project contains detailed computer vision techiniques. The lecture slides and assignments are from [CS543 UIUC Spring 2018](http://slazebni.cs.illinois.edu/spring18/).
 
