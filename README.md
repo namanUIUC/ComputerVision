@@ -136,5 +136,5 @@ The goal of the assignment is to implement a Laplacian blob detector as discusse
 Here are [four images](http://slazebni.cs.illinois.edu/spring18/assignment2/assignment2_images.zip) to test your code, and [sample output images](http://slazebni.cs.illinois.edu/spring18/assignment2/assignment2_sample_output.zip) for your reference. Keep in mind, though, that your output may look different depending on your threshold, range of scales, and other implementation details. In addition to the images provided, also **run your code on at least four images of your own choosing**.
 
 <p align="center">
-  <img width="50%" height="50%" src="utils/mp3-2.jpg">
+  <img width="75%" height="75%" src="utils/mp3-2.jpg">
 </p>
