@@ -4,6 +4,10 @@ This project contains detailed computer vision techiniques. The lecture slides a
 
 **Instructor: Svetlana Lazebnik**  (slazebni -at- illinois.edu)
 
+<p align="center">
+  <img width="50%" height="50%" src="utils/logo.png">
+</p>
+
 ## Overview
 
 In the simplest terms, computer vision is the discipline of `teaching machines how to see`. This field dates back more than fifty years, but the recent explosive growth of digital imaging and machine learning technologies makes the problems of automated image interpretation more exciting and relevant than ever. There are two major themes in the computer vision literature: 3D geometry and recognition. The first theme is about using vision as a source of **metric 3D information**: given one or more images of a scene taken by a camera with known or unknown parameters, how can we go from 2D to 3D, and how much can we tell about the 3D structure of the environment pictured in those images? The second theme, by contrast, is all about vision as a source of **semantic information**: can we recognize the objects, people, or activities pictured in the images, and understand the structure and relationships of different scene components just as a human would? This course will provide a coherent perspective on the different aspects of computer vision, and give students the ability to understand state-of-the-art vision literature and implement components that are fundamental to many modern vision systems.
@@ -59,6 +63,11 @@ Demo:
 #### Background
 
 [Sergei Mikhailovich Prokudin-Gorskii](http://en.wikipedia.org/wiki/Prokudin-Gorskii) (1863-1944) was a photographer who, between the years 1909-1915, traveled the Russian empire and took thousands of photos of everything he saw. He used an early color technology that involved recording three exposures of every scene onto a glass plate using a red, green, and blue filter. Back then, there was no way to print such photos, and they had to be displayed using a special projector. Prokudin-Gorskii left Russia in 1918. His glass plate negatives survived and were purchased by the Library of Congress in 1948. Today, a digitized version of the Prokudin-Gorskii collection is [available online](http://www.loc.gov/exhibits/empire/gorskii.html).
+
+<p align="center">
+  <img width="50%" height="50%" src="utils/outs/1\ Colorizing_Prokudin-Gorskii_images_of_the_Russian_Empire/Collage/6.jpg">
+</p>
+
 
 #### Overview
 
