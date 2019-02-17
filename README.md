@@ -184,10 +184,11 @@ The first step is to write code to stitch together a single pair of images. For 
 
 8. Create a new image big enough to hold the panorama and composite the two images into it. You can composite by simply averaging the pixel values where the two images overlap. Your result should look something like this (but hopefully with a more precise alignment):
 
-
+<p align="center">
+  <img width="50%" height="50%" src="utils/mp4-1.png">
+</p>
 
 To checkout about the extra credit work and instructions [here](http://slazebni.cs.illinois.edu/spring18/assignment3.html). 
-
 
 
 #### Part 2: Fundamental Matrix Estimation and Triangulation
@@ -214,7 +215,9 @@ To checkout about the extra credit work and instructions [here](http://slazebni.
 - For triangulation with linear least squares, it is not necessary to use data normalization (in my implementation, normalization made very little difference for this part).
 - In MATLAB, plotting in 3D can be done using the `plot3` command. Use the `axis equal` option to avoid automatic nonuniform scaling of the 3D space. In Python, use the `Axes3D` function from `mpl_toolkits.mplot3dplot3` library. To show the structure clearly, you may want to include snapshots from several viewpoints. In the past, some students have also been able to produce animated GIF's, and those have worked really well.
 
-
+<p align="center">
+  <img width="50%" height="50%" src="utils/mp4-2.png">
+</p>
 
 #### Part 3: Single-View Geometry
 
@@ -227,3 +230,7 @@ To checkout about the extra credit work and instructions [here](http://slazebni.
 2. Using the fact that the vanishing directions are orthogonal, solve for the focal length and optical center (principal point) of the camera. Show all your work.
 3. Compute the rotation matrix for the camera, setting the vertical vanishing point as the Y-direction, the right-most vanishing point as the X-direction, and the left-most vanishing point as the Z-direction.
 4. Estimate the heights of (a) the CSL building, (b) the spike statue, and (c) the lamp posts assuming that the person nearest to the spike is 5ft 6in tall. In the report, show all the lines and measurements used to perform the calculation. How do the answers change if you assume the person is 6ft tall?
+
+<p align="center">
+  <img width="50%" height="50%" src="utils/mp4-3.png">
+</p>
