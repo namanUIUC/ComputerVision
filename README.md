@@ -232,5 +232,5 @@ To checkout about the extra credit work and instructions [here](http://slazebni.
 4. Estimate the heights of (a) the CSL building, (b) the spike statue, and (c) the lamp posts assuming that the person nearest to the spike is 5ft 6in tall. In the report, show all the lines and measurements used to perform the calculation. How do the answers change if you assume the person is 6ft tall?
 
 <p align="center">
-  <img width="50%" height="50%" src="utils/mp4-3.jpg">
+  <img width="100%" height="100%" src="utils/mp4-3.jpg">
 </p>
