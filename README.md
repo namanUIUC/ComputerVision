@@ -117,6 +117,8 @@ The goal of this assignment is to implement shape from shading as described in L
 
 ### [Blob Detector](src/3-Scale_Space_blob_detection)
 
+#### Overview
+
 The goal of the assignment is to implement a Laplacian blob detector as discussed in the [this lecture](http://slazebni.cs.illinois.edu/spring18/lec09_sift.pptx). 
 
 #### Algorithm outline
@@ -140,3 +142,43 @@ Here are [four images](http://slazebni.cs.illinois.edu/spring18/assignment2/assi
 <p align="center">
   <img width="75%" height="75%" src="utils/mp3-2.jpg">
 </p>
+
+### [Robust estimation and geometric vision](src/4-Robust_estimation_and_geometric_vision)
+
+The goal of this assignment is to implement robust homography and fundamental matrix estimation to register pairs of images, as well as attempt triangulation and single-view 3D measurements.
+
+#### Overview
+
+This Assignment is divided into 3 parts:
+
+**Contents**
+
+1. Stitching pairs of images
+2. Fundamental matrix estimation and triangulation
+3. Single-view geometry
+
+#### Part 1: Stitching pairs of images
+
+Python code here and in Part 2 by Lavisha Aggarwal
+
+The first step is to write code to stitch together a single pair of images. For this part, you will be working with a pair of images (given):
+
+1. Load both images, convert to double and to grayscale.
+
+Detect feature points in both images. We provide Harris detector code you can use (MATLAB, Python) or feel free to use the blob detector you wrote for Assignment 2.
+
+Extract local neighborhoods around every keypoint in both images, and form descriptors simply by "flattening" the pixel values in each neighborhood to one-dimensional vectors. Experiment with different neighborhood sizes to see which one works the best. If you're using your Laplacian detector, use the detected feature scales to define the neighborhood scales. 
+
+Optionally, feel free to experiment with SIFT descriptors.
+MATLAB: Here is some basic code for computing SIFT descriptors of circular regions, such as the ones returned by the detector from Assignment 2.
+Python: You can use the OpenCV library to extract keypoints through the function cv2.xfeatures2D.SIFT_create().detect and compute descripters through the function cv2.xfeatures2D.SIFT_create().compute. This tutorial provides details about using SIFT in OpenCV.
+
+Compute distances between every descriptor in one image and every descriptor in the other image. In MATLAB, you can use this code for fast computation of Euclidean distance. In Python, you can use scipy.spatial.distance.cdist(X,Y,'sqeuclidean') for fast computation of Euclidean distance. If you are not using SIFT descriptors, you should experiment with computing normalized correlation, or Euclidean distance after normalizing all descriptors to have zero mean and unit standard deviation.
+
+Select putative matches based on the matrix of pairwise descriptor distances obtained above. You can select all pairs whose descriptor distances are below a specified threshold, or select the top few hundred descriptor pairs with the smallest pairwise distances.
+
+Run RANSAC to estimate a homography mapping one image onto the other. Report the number of inliers and the average residual for the inliers (squared distance between the point coordinates in one image and the transformed coordinates of the matching point in the other image). Also, display the locations of inlier matches in both images.
+
+Warp one image onto the other using the estimated transformation. To do this in MATLAB, you will need to learn about maketform and imtransform functions. In Python, use skimage.transform.ProjectiveTransform and skimage.transform.warp. 
+
+Create a new image big enough to hold the panorama and composite the two images into it. You can composite by simply averaging the pixel values where the two images overlap. Your result should look something like this (but hopefully with a more precise alignment):
