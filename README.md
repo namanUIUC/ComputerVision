@@ -54,11 +54,13 @@ bash course_material_DB.sh
 
 Demo:
 
-
+<p align="center">
+  <img width="50%" height="50%" src="utils/db.png">
+</p>
 
 ## Machine Problems
 
-### [Colorizing Prokudin-Gorskii images of the Russian Empire](src/1%20Colorizing_Prokudin-Gorskii_images_of_the_Russian_Empire)
+### [Colorizing Prokudin-Gorskii images of the Russian Empire](src/1-Colorizing_Prokudin-Gorskii_images_of_the_Russian_Empire)
 
 #### Background
 
@@ -73,7 +75,7 @@ Demo:
 
 The goal of this assignment is to learn to work with images by taking the digitized Prokudin-Gorskii glass plate images and automatically producing a color image with as few visual artifacts as possible. In order to do this, you will need to extract the three color channel images, place them on top of each other, and align them so that they form a single RGB color image. Some starter MATLAB code is available [here](http://slazebni.cs.illinois.edu/spring18/assignment0/sample_code.m), though you are not required to use it.
 
-### [Shape From Shading](src/2%20Shape_from_Shading)
+### [Shape From Shading](src/2-Shape_from_Shading)
 
 #### Overview
 
@@ -113,7 +115,7 @@ The goal of this assignment is to implement shape from shading as described in L
 
 
 
-### [Blob Detector](src/3%20Scale_Space_blob_detection)
+### [Blob Detector](src/3-Scale_Space_blob_detection)
 
 The goal of the assignment is to implement a Laplacian blob detector as discussed in the [this lecture](http://slazebni.cs.illinois.edu/spring18/lec09_sift.pptx). 
 
