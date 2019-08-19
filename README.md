@@ -1,4 +1,5 @@
 # Computer Vision @ UIUC
+[![HitCount](http://hits.dwyl.io/namanUIUC/https://githubcom/namanUIUC/ComputerVision.svg)](http://hits.dwyl.io/namanUIUC/https://githubcom/namanUIUC/ComputerVision)
 
 This project contains detailed computer vision techiniques. The lecture slides and assignments are from [CS543 UIUC Spring 2018](http://slazebni.cs.illinois.edu/spring18/).
 
